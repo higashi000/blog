@@ -3,6 +3,7 @@ title = "ひがしと東は関係なさげ"
 languageCode = "ja-jp"
 theme = "m10c"
 publishDir = "docs"
+canonifyurls = true
 
 [params]
     author = "higashi"
