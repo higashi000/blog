@@ -1,0 +1,29 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "ひがしと東は関係なさげ"
+theme = "m10c"
+publishDir = "docs"
+
+[params]
+    author = "higashi"
+    avatar = "https://i.gyazo.com/ae95a4f99fe520615292c53db2512374.jpg"
+    description = "higashiです. VimとGoが好きです."
+
+    [[params.social]]
+        name = "github"
+        url = "https://github.com/higashi000"
+    
+    [[params.social]]
+        name = "twitter"
+        url = "https://mobile.twitter.com/higashi136_2"
+
+[menu]
+    [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
