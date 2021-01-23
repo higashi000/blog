@@ -1,4 +1,4 @@
-baseURL = "higashi000.github.io"
+baseURL = "https://higashi000.github.io/blog"
 title = "ひがしと東は関係なさげ"
 languageCode = "ja-jp"
 theme = "m10c"
