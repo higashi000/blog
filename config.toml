@@ -1,6 +1,7 @@
-baseURL = "https://higashi000.github.io/blog"
+baseURL = "https://higashi000.github.io/blog/"
 title = "ひがしと東は関係なさげ"
 languageCode = "ja-jp"
+themeDir = "./themes/m10c/"
 theme = "m10c"
 publishDir = "docs"
 canonifyurls = true
