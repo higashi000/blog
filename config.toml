@@ -9,7 +9,7 @@ canonifyurls = true
 [params]
     author = "higashi"
     avatar = "https://i.gyazo.com/ae95a4f99fe520615292c53db2512374.jpg"
-    description = "higashiです. VimとGoが好きです."
+    description = "higashiです.  VimとGoが好きです."
 
     [[params.social]]
         name = "github"
@@ -17,7 +17,7 @@ canonifyurls = true
     
     [[params.social]]
         name = "twitter"
-        url = "https://mobile.twitter.com/higashi136_2"
+        url = "https://twitter.com/higashi136_2"
 
 [menu]
     [[menu.main]]
@@ -26,6 +26,12 @@ canonifyurls = true
         url = "/tags/"
 
     [[menu.main]]
+        identifier = "aboutme"
+        name = "about me"
+        url = "/aboutme/"
+
+    [[menu.main]]
         identifier = "home"
         name = "Home"
         url = "/"
+
