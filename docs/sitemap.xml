@@ -3,22 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://higashi000.github.io/blog/posts/</loc>
+    <lastmod>2021-03-03T22:09:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://higashi000.github.io/blog/</loc>
+    <lastmod>2021-03-03T22:09:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://higashi000.github.io/blog/posts/syuukatsu/</loc>
+    <lastmod>2021-03-03T22:09:19+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://higashi000.github.io/blog/aboutme/</loc>
     <lastmod>2021-01-24T01:25:13+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://higashi000.github.io/blog/posts/hello/</loc>
-    <lastmod>2021-01-23T01:25:13+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://higashi000.github.io/blog/posts/</loc>
-    <lastmod>2021-01-23T01:25:13+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://higashi000.github.io/blog/</loc>
     <lastmod>2021-01-23T01:25:13+09:00</lastmod>
   </url>
   
