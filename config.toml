@@ -35,3 +35,7 @@ canonifyurls = true
         name = "Home"
         url = "/"
 
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
