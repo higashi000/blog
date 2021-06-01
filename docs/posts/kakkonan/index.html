@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja-jp">
+  <head>
+    <title>Kakkonan // ひがしと東は関係なさげ</title>
+    <link rel="shortcut icon" href="https://higashi000.github.io/blog/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="higashi" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://higashi000.github.io/blog/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Kakkonan"/>
+<meta name="twitter:description" content="始めに こんにちは、higashiです。 以前の記事で紹介したVim/Neovim括弧補完プラグインがとてもいい感じになったので改めて紹介していきたいと思います。
+dps-kakkonanについて 作成した括弧補完プラグインはdps-kakkonanといいます。
+ 作成経緯 cohamaさんのlexima.vimとmachakann氏のvim-sandwichをリスペクトして作成しました。 元々、vim-sandwichの機能がほしかったのですが、不覚にも名前を忘れてしまい入れることができませんでした。 というわけで「名前がわからないなら自分で作るか！w」となり、前々から作っていた括弧補完プラグインに機能を追加することにしました。 それがdps-kakkonanです。
+機能 括弧補完 普通の括弧補完です。 
+visual modeで選択した範囲を括弧で囲む 囲えます。 プラグイン側でを提供しているので設定すれば使えます。
+keymap例
+&quot; dps-kakkonan surround text to backets example keymap vmap sr( &lt;Plug&gt;(dps_kakkonan_surround_parenthesis) vmap sr{ &lt;Plug&gt;(dps_kakkonan_surround_curly) vmap sr[ &lt;Plug&gt;(dps_kakkonan_surround_square) vmap sr&quot; &lt;Plug&gt;(dps_kakkonan_surround_doublequote) vmap sr&#39; &lt;Plug&gt;(dps_kakkonan_surround_singlequote) vmap sr` &lt;Plug&gt;(dps_kakkonan_surround_backquote) 
+囲っている括弧の削除 消せます。 なぜかvisual modeで選択したあと削除という形になっていますがそのうち指定した開き括弧に対応する閉じ括弧を自動削除にします。 選択後以下コマンドで使用できます。
+:&#39;&lt;,&#39;&gt;KakkonanDelete 
+括弧の置き換え 置き換えられます。 指定した括弧とその閉じ括弧を好きな括弧に置き換えられます。 こちらも囲む機能と同様にを提供しているので設定することで使うことができます。
+keymap例
+&quot; dps-kakkonan replace brackets example keymap map rp( &lt;Plug&gt;(dps_kakkonan_replace_parenthesis) map rp{ &lt;Plug&gt;(dps_kakkonan_replace_curly) map rp[ &lt;Plug&gt;(dps_kakkonan_replace_square) map rp&quot; &lt;Plug&gt;(dps_kakkonan_replace_doublequote) map rp&#39; &lt;Plug&gt;(dps_kakkonan_replace_singlequote) map rp` &lt;Plug&gt;(dps_kakkonan_replace_backquote)"/>
+
+    <meta property="og:title" content="Kakkonan" />
+<meta property="og:description" content="始めに こんにちは、higashiです。 以前の記事で紹介したVim/Neovim括弧補完プラグインがとてもいい感じになったので改めて紹介していきたいと思います。
+dps-kakkonanについて 作成した括弧補完プラグインはdps-kakkonanといいます。
+ 作成経緯 cohamaさんのlexima.vimとmachakann氏のvim-sandwichをリスペクトして作成しました。 元々、vim-sandwichの機能がほしかったのですが、不覚にも名前を忘れてしまい入れることができませんでした。 というわけで「名前がわからないなら自分で作るか！w」となり、前々から作っていた括弧補完プラグインに機能を追加することにしました。 それがdps-kakkonanです。
+機能 括弧補完 普通の括弧補完です。 
+visual modeで選択した範囲を括弧で囲む 囲えます。 プラグイン側でを提供しているので設定すれば使えます。
+keymap例
+&quot; dps-kakkonan surround text to backets example keymap vmap sr( &lt;Plug&gt;(dps_kakkonan_surround_parenthesis) vmap sr{ &lt;Plug&gt;(dps_kakkonan_surround_curly) vmap sr[ &lt;Plug&gt;(dps_kakkonan_surround_square) vmap sr&quot; &lt;Plug&gt;(dps_kakkonan_surround_doublequote) vmap sr&#39; &lt;Plug&gt;(dps_kakkonan_surround_singlequote) vmap sr` &lt;Plug&gt;(dps_kakkonan_surround_backquote) 
+囲っている括弧の削除 消せます。 なぜかvisual modeで選択したあと削除という形になっていますがそのうち指定した開き括弧に対応する閉じ括弧を自動削除にします。 選択後以下コマンドで使用できます。
+:&#39;&lt;,&#39;&gt;KakkonanDelete 
+括弧の置き換え 置き換えられます。 指定した括弧とその閉じ括弧を好きな括弧に置き換えられます。 こちらも囲む機能と同様にを提供しているので設定することで使うことができます。
+keymap例
+&quot; dps-kakkonan replace brackets example keymap map rp( &lt;Plug&gt;(dps_kakkonan_replace_parenthesis) map rp{ &lt;Plug&gt;(dps_kakkonan_replace_curly) map rp[ &lt;Plug&gt;(dps_kakkonan_replace_square) map rp&quot; &lt;Plug&gt;(dps_kakkonan_replace_doublequote) map rp&#39; &lt;Plug&gt;(dps_kakkonan_replace_singlequote) map rp` &lt;Plug&gt;(dps_kakkonan_replace_backquote)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://higashi000.github.io/blog/posts/kakkonan/" />
+<meta property="article:published_time" content="2021-05-29T18:50:50+09:00" />
+<meta property="article:modified_time" content="2021-05-29T18:50:50+09:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://higashi000.github.io/blog/"><img class="app-header-avatar" src="https://i.gyazo.com/ae95a4f99fe520615292c53db2512374.jpg" alt="higashi" /></a>
+      <h1>ひがしと東は関係なさげ</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="https://higashi000.github.io/blog/aboutme/">about me</a>
+             - 
+          
+          <a class="app-header-menu-item" href="https://higashi000.github.io/blog/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="https://higashi000.github.io/blog/tags/">Tags</a>
+      </nav>
+      <p>higashiです.  VimとGoが好きです.</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/higashi000" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+          <a target="_blank" href="https://twitter.com/higashi136_2" rel="noreferrer noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Kakkonan</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 29, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="始めに">始めに</h1>
+<p>こんにちは、higashiです。
+以前の記事で紹介したVim/Neovim括弧補完プラグインがとてもいい感じになったので改めて紹介していきたいと思います。</p>
+<h1 id="dps-kakkonanについて">dps-kakkonanについて</h1>
+<p>作成した括弧補完プラグインは<a href="https://github.com/higashi000/dps-kakkonan/">dps-kakkonan</a>といいます。</p>
+<script src="https://gist-it.appspot.com//http://github.com/higashi000/blog"></script>
+<h1 id="作成経緯">作成経緯</h1>
+<p>cohamaさんの<a href="https://github.com/cohama/lexima.vim">lexima.vim</a>とmachakann氏の<a href="https://github.com/machakann/vim-sandwich">vim-sandwich</a>をリスペクトして作成しました。
+元々、vim-sandwichの機能がほしかったのですが、不覚にも名前を忘れてしまい入れることができませんでした。
+というわけで「名前がわからないなら自分で作るか！w」となり、前々から作っていた括弧補完プラグインに機能を追加することにしました。
+それがdps-kakkonanです。</p>
+<h1 id="機能">機能</h1>
+<h2 id="括弧補完">括弧補完</h2>
+<p>普通の括弧補完です。
+<a href="https://gyazo.com/977511c3215785e40f41329fdabb5bb4"><img src="https://i.gyazo.com/977511c3215785e40f41329fdabb5bb4.gif" alt="Image from Gyazo"></a></p>
+<h3 id="visual-modeで選択した範囲を括弧で囲む">visual modeで選択した範囲を括弧で囲む</h3>
+<p>囲えます。
+プラグイン側で<Plug>を提供しているので設定すれば使えます。</p>
+<p>keymap例</p>
+<pre><code>&quot; dps-kakkonan surround text to backets example keymap
+vmap sr( &lt;Plug&gt;(dps_kakkonan_surround_parenthesis)
+vmap sr{ &lt;Plug&gt;(dps_kakkonan_surround_curly)
+vmap sr[ &lt;Plug&gt;(dps_kakkonan_surround_square)
+vmap sr&quot; &lt;Plug&gt;(dps_kakkonan_surround_doublequote)
+vmap sr' &lt;Plug&gt;(dps_kakkonan_surround_singlequote)
+vmap sr` &lt;Plug&gt;(dps_kakkonan_surround_backquote)
+</code></pre><p><a href="https://gyazo.com/642cdff83f7767d16b35af9a208a751b"><img src="https://i.gyazo.com/642cdff83f7767d16b35af9a208a751b.gif" alt="Image from Gyazo"></a></p>
+<h2 id="囲っている括弧の削除">囲っている括弧の削除</h2>
+<p>消せます。
+なぜかvisual modeで選択したあと削除という形になっていますがそのうち指定した開き括弧に対応する閉じ括弧を自動削除にします。
+選択後以下コマンドで使用できます。</p>
+<pre><code>:'&lt;,'&gt;KakkonanDelete
+</code></pre><p><a href="https://gyazo.com/8fd7611abd5748bcdf5da53b443eacd3"><img src="https://i.gyazo.com/8fd7611abd5748bcdf5da53b443eacd3.gif" alt="Image from Gyazo"></a></p>
+<h2 id="括弧の置き換え">括弧の置き換え</h2>
+<p>置き換えられます。
+指定した括弧とその閉じ括弧を好きな括弧に置き換えられます。
+こちらも囲む機能と同様に<Plug>を提供しているので設定することで使うことができます。</p>
+<p>keymap例</p>
+<pre><code>&quot; dps-kakkonan replace brackets example keymap
+map rp( &lt;Plug&gt;(dps_kakkonan_replace_parenthesis)
+map rp{ &lt;Plug&gt;(dps_kakkonan_replace_curly)
+map rp[ &lt;Plug&gt;(dps_kakkonan_replace_square)
+map rp&quot; &lt;Plug&gt;(dps_kakkonan_replace_doublequote)
+map rp' &lt;Plug&gt;(dps_kakkonan_replace_singlequote)
+map rp` &lt;Plug&gt;(dps_kakkonan_replace_backquote)
+</code></pre><p><a href="https://gyazo.com/9788368e06d751f4adc0b50958eec300"><img src="https://i.gyazo.com/9788368e06d751f4adc0b50958eec300.gif" alt="Image from Gyazo"></a></p>
+<h1 id="最後に">最後に</h1>
+<p>これからも少しずつですが使いやすくしていきたいです。
+PRは大歓迎なので何かればぜひ送ってください。</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

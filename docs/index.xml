@@ -6,7 +6,105 @@
     <description>Recent content on ひがしと東は関係なさげ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 03 Mar 2021 22:09:19 +0900</lastBuildDate><atom:link href="https://higashi000.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jun 2021 21:02:41 +0900</lastBuildDate><atom:link href="https://higashi000.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3年9ヶ月をともにしたFHDモニターと共に高専生活を振り返る</title>
+      <link>https://higashi000.github.io/blog/posts/4k-monitor/</link>
+      <pubDate>Tue, 01 Jun 2021 21:02:41 +0900</pubDate>
+      
+      <guid>https://higashi000.github.io/blog/posts/4k-monitor/</guid>
+      <description>皆さんこんにちは、higashiです。
+この度私higashiは4Kモニターを買いました。
+これが...4K... pic.twitter.com/eSHGWc5pG5
+&amp;mdash; higashi (@higashi136_2) May 31, 2021  4Kモニターを買ったわけ ほしかったから
+本題 別に4Kモニターを買ったのが本題なわけではありません。
+今回の本題は「4Kモニターを購入するまで一緒に頑張ってくれたFHDモニターと振り返る高専生活」です。
+主役のご紹介 今回はこの写真に写っているターミナルが表示されているキーボード前のモニターです。
+快適だ pic.twitter.com/BYb7zg5m1M
+&amp;mdash; higashi (@higashi136_2) June 19, 2020  なぜモニターと振り返るのか 振り返りは3月とかにやるものなのに、なぜこのタイミングなのかというとこの今まで使っていたFHDモニターに深い思い入れがあるからです。 実はこのFHDモニター、僕のどのメインPCよりも長い間メインモニターとして活躍してくれていました。
+僕のメインPCの歴史 僕のメインPCは以下のように変化してきました
+推奨機 (2017年4月 ~ 2019年3月)
+↓
+X220 (2019年3月 ~ 2019年12月)
+↓
+X395 (2019年12月 ~ 2020年5月) ※外出時専用PCになった
+↓
+DeskMini A300 (2020年5月 ~ )
+一番長い推奨機ですら2年です。
+それを考えるとこのFHDモニターの3年9ヶ月という数字は驚異的な期間なんですよ。
+途中サブモニターを購入したりもしましたがこのモニターをメインとしてずっと使い続けていたのでとても愛着があるわけです。
+それではこのモニターとの出会いからお話していきましょう。
+出会い こいつとの出会いは2017年9月、高専1年の夏休みでした。
+初めてのバイト代が入り、近くのGoodWillに行ったとき、
+ 21.5inchという部屋に置くのにちょうどいいサイズ お値段1万円  という理由で選び購入しました。
+帰りの車でウキウキしていたのを今でも覚えています。
+こいつと経験してきた開発 なんだかんだそれから3年9ヶ月、こいつといろんな開発を乗り越えてきました。
+高専プロコン 高専procon29, 30, 31ではこいつをPCに接続した状態で開発をしました。</description>
+    </item>
+    
+    <item>
+      <title>Kakkonan</title>
+      <link>https://higashi000.github.io/blog/posts/kakkonan/</link>
+      <pubDate>Sat, 29 May 2021 18:50:50 +0900</pubDate>
+      
+      <guid>https://higashi000.github.io/blog/posts/kakkonan/</guid>
+      <description>始めに こんにちは、higashiです。 以前の記事で紹介したVim/Neovim括弧補完プラグインがとてもいい感じになったので改めて紹介していきたいと思います。
+dps-kakkonanについて 作成した括弧補完プラグインはdps-kakkonanといいます。
+ 作成経緯 cohamaさんのlexima.vimとmachakann氏のvim-sandwichをリスペクトして作成しました。 元々、vim-sandwichの機能がほしかったのですが、不覚にも名前を忘れてしまい入れることができませんでした。 というわけで「名前がわからないなら自分で作るか！w」となり、前々から作っていた括弧補完プラグインに機能を追加することにしました。 それがdps-kakkonanです。
+機能 括弧補完 普通の括弧補完です。 
+visual modeで選択した範囲を括弧で囲む 囲えます。 プラグイン側でを提供しているので設定すれば使えます。
+keymap例
+&amp;quot; dps-kakkonan surround text to backets example keymap vmap sr( &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_parenthesis) vmap sr{ &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_curly) vmap sr[ &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_square) vmap sr&amp;quot; &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_doublequote) vmap sr&#39; &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_singlequote) vmap sr` &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_backquote) 
+囲っている括弧の削除 消せます。 なぜかvisual modeで選択したあと削除という形になっていますがそのうち指定した開き括弧に対応する閉じ括弧を自動削除にします。 選択後以下コマンドで使用できます。
+:&#39;&amp;lt;,&#39;&amp;gt;KakkonanDelete 
+括弧の置き換え 置き換えられます。 指定した括弧とその閉じ括弧を好きな括弧に置き換えられます。 こちらも囲む機能と同様にを提供しているので設定することで使うことができます。
+keymap例
+&amp;quot; dps-kakkonan replace brackets example keymap map rp( &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_parenthesis) map rp{ &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_curly) map rp[ &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_square) map rp&amp;quot; &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_doublequote) map rp&#39; &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_singlequote) map rp` &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_backquote)</description>
+    </item>
+    
+    <item>
+      <title>HHKBのType-SのSはSIZUKAのS</title>
+      <link>https://higashi000.github.io/blog/posts/review-hhkb/</link>
+      <pubDate>Sat, 22 May 2021 14:39:59 +0900</pubDate>
+      
+      <guid>https://higashi000.github.io/blog/posts/review-hhkb/</guid>
+      <description>皆さん、キーボードは好きですか？
+私は静電容量無接点方式が採用されたキーボードが好きです。
+というわけで去年の8月頃REALFORCEを購入しました。
+というわけで pic.twitter.com/yeYCxfgRA1
+&amp;mdash; higashi (@higashi136_2) August 12, 2020  REALFORCEの使い心地はとてもよく、コーディングがより一層楽しくなったのですが、一つ大きな問題がありました&amp;hellip;
+REALFORCEの欠点 大きい とても大きいです。
+TKLモデルを購入したのですが、それでも大きかったです。
+マウスを振るとキーボードに衝突します。
+fpsなんてやろうもんなら相手にエイムを合わせる前にキーボードとマウスが衝突します。
+ちなみにこれはマウスを振ったときに衝突する例です。
+
+持ち運びができない 大きいということは持ち運びが苦ということです。
+去年はほとんど自宅で引きこもり生活でしたが、今年度から卒研室配属があり、そこでの長時間コーディングが予想されました。
+静電容量無接点が好きな私としては卒研室でも静電容量無接点のキーボードが使いたい。
+でもREALFORCEは持ち運びできない&amp;hellip;
+これらの解決策 REALFORCE，とても素晴らしくて満足してるんだけどひとつだけ悲しいことがあって机が狭いせいでマウス動かすとぶつかる
+&amp;mdash; higashi (@higashi136_2) February 22, 2021  REALFORCEが広すぎる時の解決策:HHKBを買う
+&amp;mdash; 色即是空 (@kuuote) February 22, 2021  どのモデルを買ったのか HHKBは現在
+ Classic Professional HYBRID Professional HYBRID Type-S  の3モデルが出ています。
+Classicは有線オンリーモデル。
+Professional HYBRIDはBluetooth + 有線接続モデル。
+Professional HYBRID Type-SはBluetooth + 有線接続モデルが静音になったモデルです。
+もともと無線いらないかな〜と思っていたのですがvim-jpの皆様の熱いひと押しで無線モデルに魅力を感じ、Professional HYBRIDを購入することにしました。
+ですが、Professinal HYBRIDは通常モデルと静音モデルがあります。
+ここでも迷いました。
+ということでvim-jpの皆様に相談したところ、卒研室で使うなら静かなほうがいいのでは？というアドバイスをいただきProfessinal HYBRID Type-Sを購入することにしました。</description>
+    </item>
+    
+    <item>
+      <title>Testest</title>
+      <link>https://higashi000.github.io/blog/posts/testest/</link>
+      <pubDate>Sat, 20 Mar 2021 17:26:17 +0900</pubDate>
+      
+      <guid>https://higashi000.github.io/blog/posts/testest/</guid>
+      <description>これはテスト テスト記事</description>
+    </item>
+    
     <item>
       <title>未熟Vimmerの就活記</title>
       <link>https://higashi000.github.io/blog/posts/syuukatsu/</link>
