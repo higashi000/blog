@@ -43,27 +43,7 @@ DeskMini A300 (2020年5月 ~ )
     </item>
     
     <item>
-      <title>Kakkonan</title>
-      <link>https://higashi000.github.io/blog/posts/kakkonan/</link>
-      <pubDate>Sat, 29 May 2021 18:50:50 +0900</pubDate>
-      
-      <guid>https://higashi000.github.io/blog/posts/kakkonan/</guid>
-      <description>始めに こんにちは、higashiです。 以前の記事で紹介したVim/Neovim括弧補完プラグインがとてもいい感じになったので改めて紹介していきたいと思います。
-dps-kakkonanについて 作成した括弧補完プラグインはdps-kakkonanといいます。
- 作成経緯 cohamaさんのlexima.vimとmachakann氏のvim-sandwichをリスペクトして作成しました。 元々、vim-sandwichの機能がほしかったのですが、不覚にも名前を忘れてしまい入れることができませんでした。 というわけで「名前がわからないなら自分で作るか！w」となり、前々から作っていた括弧補完プラグインに機能を追加することにしました。 それがdps-kakkonanです。
-機能 括弧補完 普通の括弧補完です。 
-visual modeで選択した範囲を括弧で囲む 囲えます。 プラグイン側でを提供しているので設定すれば使えます。
-keymap例
-&amp;quot; dps-kakkonan surround text to backets example keymap vmap sr( &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_parenthesis) vmap sr{ &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_curly) vmap sr[ &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_square) vmap sr&amp;quot; &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_doublequote) vmap sr&#39; &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_singlequote) vmap sr` &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_backquote) 
-囲っている括弧の削除 消せます。 なぜかvisual modeで選択したあと削除という形になっていますがそのうち指定した開き括弧に対応する閉じ括弧を自動削除にします。 選択後以下コマンドで使用できます。
-:&#39;&amp;lt;,&#39;&amp;gt;KakkonanDelete 
-括弧の置き換え 置き換えられます。 指定した括弧とその閉じ括弧を好きな括弧に置き換えられます。 こちらも囲む機能と同様にを提供しているので設定することで使うことができます。
-keymap例
-&amp;quot; dps-kakkonan replace brackets example keymap map rp( &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_parenthesis) map rp{ &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_curly) map rp[ &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_square) map rp&amp;quot; &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_doublequote) map rp&#39; &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_singlequote) map rp` &amp;lt;Plug&amp;gt;(dps_kakkonan_replace_backquote)</description>
-    </item>
-    
-    <item>
-      <title>HHKBのType-SのSはSIZUKAのS</title>
+      <title>HHKB Type-SのSはSIZUKAのS</title>
       <link>https://higashi000.github.io/blog/posts/review-hhkb/</link>
       <pubDate>Sat, 22 May 2021 14:39:59 +0900</pubDate>
       
