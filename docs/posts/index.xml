@@ -43,6 +43,33 @@ DeskMini A300 (2020年5月 ~ )
     </item>
     
     <item>
+      <title>作っている括弧補完pluginがいい感じになってきた</title>
+      <link>https://higashi000.github.io/blog/posts/kakkonan/</link>
+      <pubDate>Sat, 29 May 2021 18:50:50 +0900</pubDate>
+      
+      <guid>https://higashi000.github.io/blog/posts/kakkonan/</guid>
+      <description>始めに こんにちは、higashiです。
+以前の記事で紹介したVim/Neovimの括弧補完プラグインがとてもいい感じになったので改めて紹介していきたいと思います。
+以前の記事はこちら
+ dps-kakkonanについて 作成した括弧補完プラグインはdps-kakkonanといいます。
+lexima.vimとvim-sandwichをリスペクトしています。
+ インストール方法 dps-kakkonanではdenops.vimを利用しているため、denoのインストールが必要となります。
+以下のページを参考にインストールしてください。
+ 次に使用しているプラグインマネージャーで以下の2つのプラグインをインストールしてください。
+ vim-denops/denops.vim higashi000/dps-kakkonan  例
+&amp;quot; dein.vim call dein#add(&#39;vim-denops/denops.vim&#39;) call dein#add(&#39;higashi000/dps-kakkonan&#39;) 機能 括弧補完 普通の括弧補完です。 
+visual modeで選択した範囲を括弧で囲む 囲えます。
+プラグイン側で&amp;lt;Plug&amp;gt;を提供しているので設定すれば使えます。
+keymap例
+&amp;quot; dps-kakkonan surround text to backets example keymap vmap sr( &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_parenthesis) vmap sr{ &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_curly) vmap sr[ &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_square) vmap sr&amp;quot; &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_doublequote) vmap sr&#39; &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_singlequote) vmap sr` &amp;lt;Plug&amp;gt;(dps_kakkonan_surround_backquote) 
+囲っている括弧の削除 消せます。
+消したい括弧の上で以下のコマンドを実行すると消えてくれます。
+:KakkonanDelete 
+括弧の置き換え 置き換えられます。
+指定した括弧とその閉じ括弧を好きな括弧に置き換えられます。</description>
+    </item>
+    
+    <item>
       <title>HHKB Type-SのSはSIZUKAのS</title>
       <link>https://higashi000.github.io/blog/posts/review-hhkb/</link>
       <pubDate>Sat, 22 May 2021 14:39:59 +0900</pubDate>
