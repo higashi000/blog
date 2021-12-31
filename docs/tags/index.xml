@@ -5,6 +5,10 @@
     <link>https://higashi000.github.io/blog/tags/</link>
     <description>Recent content in Tags on ひがしと東は関係なさげ</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language><atom:link href="https://higashi000.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja-jp</language>
+    
+	<atom:link href="https://higashi000.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
